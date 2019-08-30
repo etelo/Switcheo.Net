@@ -688,7 +688,7 @@ namespace Switcheo.Net
             parameters.AddParameter("blockchain", blockchainType.ToString().ToLower());
             parameters.AddParameter("side", side.ToString().ToLower());
             parameters.AddParameter("price", price.ToFixedEightDecimals());
-            parameters.AddParameter("want_amount", wantAmount.ToAssetAmount(token.Precision));
+            parameters.AddParameter("quantity", wantAmount.ToAssetAmount(token.Precision));
             parameters.AddParameter("use_native_tokens", useNativeToken);
             parameters.AddParameter("order_type", orderType.ToString().ToLower());
             parameters.AddParameter("timestamp", GetTimestamp());
